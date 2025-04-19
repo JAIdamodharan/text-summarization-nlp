@@ -131,6 +131,11 @@ def extract_named_entities(text):
 - ROUGE scores comparison provides quantitative evaluation
 - NER system successfully identifies key entities in tennis articles
 
+![image](https://github.com/user-attachments/assets/b2fb3c46-f669-4680-8159-18e7152f415c)
+
+Based on the graph, the Spacy model (extractive summarization) significantly outperforms the BART model (abstractive summarization) across all ROUGE metrics. Spacy shows particularly strong performance in ROUGE-1 and ROUGE-2 scores, suggesting it better preserves the original text's words and phrases. This is expected since extractive summarization directly selects sentences from the source text, while abstractive summarization generates new text that may use different wording than the original.RetryClaude can make mistakes. Please double-check responses.
+
+
 ## Limitations
 - Dataset limited to tennis articles
 - Basic NER system relies on predefined dictionaries
@@ -148,6 +153,58 @@ def extract_named_entities(text):
 - Hugging Face Transformers library
 - spaCy NLP library
 - NLTK for basic NLP tasks
+
+# Contributing to News Summarization Project
+
+## Clone the Repository
+```bash
+git clone https://github.com/yourusername/news-summarization-project.git
+cd news-summarization-project
+```
+
+## Fork the Repository
+1. Click "Fork" on the GitHub repository page
+2. Clone your fork:
+   ```bash
+   git clone https://github.com/your-username/news-summarization-project.git
+   ```
+3. Add upstream remote:
+   ```bash
+   git remote add upstream https://github.com/yourusername/news-summarization-project.git
+   ```
+4. Keep your fork updated:
+   ```bash
+   git fetch upstream
+   git checkout main
+   git merge upstream/main
+   ```
+
+## Submit a Pull Request
+1. Create a branch:
+   ```bash
+   git checkout -b feature/your-feature
+   ```
+2. Make and commit your changes:
+   ```bash
+   git add .
+   git commit -m "Brief description of changes"
+   ```
+3. Push to your fork:
+   ```bash
+   git push origin feature/your-feature
+   ```
+4. Go to the original repository and click "New Pull Request"
+5. Select "compare across forks" and select your branch
+6. Add a clear title and description
+7. Submit the pull request
+
+## PR Requirements
+- Follow code style (PEP 8)
+- Include tests for new features
+- Update documentation as needed
+- Use clear commit messages
+
+For questions, open an issue or contact: jai.shree.dam@gmail.com
 
 ## License
 This project is available under the MIT License.
